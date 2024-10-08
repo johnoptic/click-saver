@@ -1,13 +1,26 @@
 body {
     text-align: center;
-    margin-top: 4em;
+    margin-top: 36px;
     background-color: black;
     color: antiquewhite;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
+
+#textPrompt {
+    font-family: 'Lucida Console', Monaco, monospace;
+}
+
+#saverDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
 img {
     height: 8em;
-    margin-top: 0.5em;
 }
 
 button {
@@ -26,4 +39,59 @@ button:hover{
 #money {
     font-size: 40px;
     color: green;
+}
+
+#saverForm {
+    background-color: transparent;
+    padding: 20px; 
+    border-radius: 5px; 
+    color: white; 
+}
+
+#saverForm label,
+#saverForm input {
+    color: white; 
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.arrow-button {
+    height: 50px;
+    width: 50px;
+    background-color: transparent; 
+    border: none; 
+    border-radius: 4%;
+    color: #00FFFF; 
+    font-size: 16px; 
+    cursor: pointer; 
+    padding: 10px;
+}
+
+.arrow-button:hover{
+    background-color: rgb(57, 57, 57);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#incrementInput {
+    background-color: transparent; 
+    border: 1px solid #00FFFF; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px; 
+    width: 100px;
 }
