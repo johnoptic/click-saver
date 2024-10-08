@@ -1,7 +1,9 @@
 body {
+    margin: 0;
     text-align: center;
     margin-top: 36px;
-    background-color: black;
+    height: 100vh;
+    background: linear-gradient(180deg, #000, #090028, #000);
     color: antiquewhite;
     font-size: 20px;
     display: flex;
@@ -9,7 +11,7 @@ body {
     align-items: center; 
 }
 
-#textPrompt {
+#textPrompt, h2 {
     font-family: 'Lucida Console', Monaco, monospace;
 }
 
