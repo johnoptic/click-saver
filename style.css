@@ -24,7 +24,8 @@ body {
 }
 
 img {
-    height: 8em;
+    max-width: 100%;
+    height: auto;
 }
 
 button {
@@ -46,8 +47,9 @@ button:hover{
 }
 
 #money {
-    font-size: 40px;
+    font-size: 56px;
     color: green;
+    text-shadow: 2px 2px goldenrod;
 }
 
 #saverForm {
