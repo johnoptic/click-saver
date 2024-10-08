@@ -11,7 +11,7 @@ body {
     align-items: center; 
 }
 
-#textPrompt, h2 {
+#textPrompt, h2, button {
     font-family: 'Lucida Console', Monaco, monospace;
 }
 
@@ -29,12 +29,17 @@ button {
     margin: 20px;
     height: 4em;
     width: 8em;
-    color: black;
-    background-color: rgb(189, 182, 165);   
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: #00FFFF;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; 
+    cursor: pointer;
 }
 
 button:hover{
-    background-color: rgb(158, 166, 174);
+    background-color: rgb(57, 57, 57);
+    border-color: #000;
     cursor:pointer;
 }
 
