@@ -76,6 +76,37 @@ window.onload = function() {
             clearInterval(intervalId);
         }
     });
+
+
+    //Stars Background
+    const numStars = 100; // Number of stars
+    const body = document.body;
+
+    // Array of colors
+    const colors = ['#b1fefe', '#fbc875', '#fb9275'];
+
+    for (let i = 0; i < numStars; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+
+        const size = Math.random() * 2 + 1;
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+
+        // Random position
+        star.style.top = `${Math.random() * 100}vh`;
+        star.style.left = `${Math.random() * 100}vw`;
+
+        // Randomly select a color from the array
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        star.style.backgroundColor = randomColor;
+
+        // Append star to the body
+        body.appendChild(star);
+    }
+
+
+
 };
 
 function imgUpdate() {
@@ -94,3 +125,5 @@ function imgUpdate() {
         numYears = Math.floor(numDays / 365);
     }
 }
+
+
