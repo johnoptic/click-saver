@@ -1,3 +1,3 @@
 # Click-Saver
 
-![clicksaver](clicksaver.gif)
+![clicksaver](example.png)
